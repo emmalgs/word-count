@@ -1,8 +1,8 @@
-//
-// This is only a SKELETON file for the 'Word Count' exercise. It's been provided as a
-// convenience to get you started writing code faster.
-//
-
-export const countWords = () => {
-  throw new Error('Remove this statement and implement this function');
+export const countWords = (string) => {
+  const words = string.split(" ");
+  const counts = {};
+  words.forEach(word => {
+    counts[word] = counts[word] ? counts[word] + 1 : 1;
+  });
+  return counts;
 };
