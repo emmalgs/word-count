@@ -1,5 +1,4 @@
 export const countWords = (string) => {
-  // use regex to find and replace all punctioation and \n with spaces
   string = string.replace(/\n/g, "");
   string = string.replace(/[:!$@%&^]/g, "");
   string = string.replace(/[.,]/g, " ");
